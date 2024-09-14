@@ -1,0 +1,341 @@
+@font-face {
+  font-family: customFont;
+  src: url(./Fonts/Josefin_Sans/static/JosefinSans-Regular.ttf);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style-type: none;
+  text-decoration: none;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  font-family: customFont;
+}
+.mainSection {
+  background-color: slategrey;
+}
+.header {
+  padding: 15px 60px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.header .logo a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+}
+.header .logo a span {
+  font-size: 1.4rem;
+  color: white;
+}
+.header .logo img {
+  width: 60px;
+  height: 60px;
+  background-color: goldenrod;
+  border-radius: 50%;
+  padding: 8px;
+}
+nav ul {
+  display: flex;
+}
+nav ul li {
+  margin-right: 20px;
+}
+nav ul li a {
+  padding: 12px 0;
+  font-size: 1.1rem;
+  color: whitesmoke;
+  font-weight: 600;
+}
+nav ul li:last-child a {
+  background-color: goldenrod;
+  padding: 12px 18px;
+  color: white;
+  border-radius: 30px;
+  font-size: initial;
+  font-weight: initial;
+}
+.hero {
+  padding: 0 60px;
+  width: 100%;
+  margin-top: 80px;
+  display: flex;
+  justify-content: space-between;
+}
+.hero .box {
+  width: 50%;
+  /* border: 2px solid red; */
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+}
+.hero .content h2 {
+  font-size: 4.5rem;
+  margin-bottom: 30px;
+  color: goldenrod;
+  font-weight: 900;
+}
+.hero .content p {
+  font-size: 1.5rem;
+  margin-bottom: 50px;
+  color: white;
+}
+.hero .content .btn {
+  padding: 20px;
+  border: 2px solid gold;
+  color: white;
+  text-transform: uppercase;
+  border-radius: 30px;
+}
+.hero .box:last-child {
+  align-items: flex-end;
+}
+.hero .content img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.logos {
+  background-color: azure;
+  padding: 20px;
+}
+h3 {
+  color: grey;
+  font-size: 1.6rem;
+  text-align: center;
+  font-weight: 20;
+  width: 20%;
+  margin: 50px auto;
+  padding-bottom: 10px;
+  border-bottom: 1px solid gray;
+}
+.weDo {
+  background-color: white;
+  padding: 60px;
+}
+
+.weDo .imageContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+}
+.weDo .imageContainer .imageBox {
+  width: 450px;
+  padding: 30px;
+}
+.weDo .imageContainer .imageBox .image {
+  width: 90px;
+  margin: 0 auto;
+  margin-bottom: 30px;
+}
+.weDo .imageContainer .imageBox .image img {
+  height: 90px;
+  object-fit: cover;
+}
+
+.weDo .imageContainer .imageBox .content {
+  text-align: center;
+}
+.weDo .imageContainer .imageBox .content p:first-child {
+  text-transform: uppercase;
+  margin-bottom: 15px;
+  font-weight: 700;
+}
+.weDo .imageContainer .imageBox .content .paragraph {
+  margin-bottom: 30px;
+  font-size: 1.3rem;
+  color: gray;
+  font-weight: 400;
+}
+.weDo .imageContainer .imageBox .content a {
+  color: slateblue;
+  font-weight: 600;
+  font-size: 1.2rem;
+  text-align: ;
+}
+.Images {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+.Images .fineImages {
+  height: 50px;
+  padding: 0 50px;
+}
+.Images .fineImages img {
+  height: 70%;
+}
+
+.HowWeWork {
+  background-color: navy;
+  padding: 20px;
+}
+.HowWeWork h4 {
+  color: blueviolet;
+  font-size: 1.6rem;
+  text-align: center;
+  font-weight: 20;
+  width: 20%;
+  margin: 50px auto;
+  padding-bottom: 10px;
+  border-bottom: 1px solid gray;
+}
+.HowWeWork p {
+  font-size: 5rem;
+  font-weight: 400;
+  color: white;
+  text-align: center;
+  margin-bottom: 15px;
+}
+.highlight {
+  color: aqua;
+}
+.plan-table {
+  display: flex;
+  justify-content: center;
+  gap: 100px;
+}
+.pricing-plan {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  text-align: center;
+  flex: 1;
+  max-width: 300px;
+  margin-bottom: 15px;
+}
+.plan-title {
+  font-size: 1.5em;
+  font-weight: 20;
+  color: black;
+  text-align: right;
+  width: 50%;
+  margin: 30px auto;
+  padding-bottom: 10px;
+  border-bottom: 3px solid gray;
+}
+.plan-price {
+  font-size: 1.8em;
+  color: black;
+}
+.plan-features {
+  font-size: 1.6em;
+  padding-bottom: 20px;
+  padding-top: 20px;
+}
+.bold {
+  font-weight: bold;
+}
+.plan-button {
+  background-color: black;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 1.3rem;
+  cursor: pointer;
+  border-bottom: 3px solid black;
+}
+.MeetOurTeam {
+  background-color: whitesmoke;
+  padding: 10px;
+}
+.StaffInfo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+}
+.StaffInfo .staffimages img {
+  height: 10%;
+  border-radius: 1rem;
+  margin-bottom: 30px;
+}
+.staffimages h5 {
+  color: cornflowerblue;
+  font-weight: 1000;
+  text-align: center;
+  font-size: 1.6rem;
+  margin-bottom: 15px;
+}
+.staffimages p {
+  color: grey;
+  font-size: larger;
+  text-align: center;
+  margin-bottom: 35px;
+}
+.WeSource {
+  background-color: white;
+  padding: 10px;
+}
+.WeSourceContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+}
+.WeSourceContainer,
+h2 {
+  color: black;
+  font-size: 5rem;
+  font-weight: 400;
+  text-align: center;
+  margin-bottom: 15px;
+}
+.WeSourceimage img {
+  width: 100px;
+  height: 100px;
+}
+.plan-buttons {
+  padding: 20px;
+  color: grey;
+  background-color: whitesmoke;
+  border-radius: 2px;
+  width: 30%;
+  font-size: 1rem;
+  margin-bottom: 90px;
+}
+.Footer {
+  background-color: navy;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 250px;
+}
+.Footer h1 {
+  color: white;
+  margin-bottom: 1.5rem;
+}
+.Footer li {
+  color: rgb(127, 16, 232);
+  margin-bottom: 1.5rem;
+}
+.Footer a {
+  color: rgb(127, 16, 232);
+}
+li ol {
+  margin-bottom: 8px;
+  padding-bottom: 8px;
+  font-size: 1.3rem;
+}
+.ContUS h1 {
+  margin-bottom: 25px;
+}
+.ContUS a {
+  display: flex;
+  margin-bottom: 8px;
+  padding-bottom: 8px;
+  font-size: 1.3rem;
+  color: rgb(127, 16, 232);
+}
